@@ -3,8 +3,9 @@ version: 0.1
 phases:
   install:
     commands:
-      - npm install -g serverless@1.31.0
-  post_build:
+      - npm install
+      - npm install -g serverless
+  build:
     commands:
-      - serverless deploy --verbose
+      - serverless deploy 
   
